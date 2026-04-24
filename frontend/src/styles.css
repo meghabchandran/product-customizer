@@ -1,0 +1,218 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  background: #0b1220;
+  color: white;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: #111a2e;
+  border-bottom: 1px solid #1f2a44;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.nav-links button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #2a3b5f;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links button:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+/* BUTTONS */
+button {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto; /* ✅ no stretch */
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* INPUTS (FIXED WIDTH — FINAL FIX) */
+select, input {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+
+  width: 280px;   /* 🔥 force fixed width */
+}
+
+/* HOME PAGE */
+.home {
+  height: calc(100vh - 60px);
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.home-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-left h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.home-left p {
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.home-left button {
+  margin-top: 20px;
+}
+
+/* RIGHT SIDE */
+.home-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.mock-card {
+  background: #111a2e;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2a44;
+  text-align: center;
+}
+
+/* CUSTOMIZER PAGE */
+.customizer {
+  height: calc(100vh - 60px);
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+/* LEFT PANEL */
+.panel {
+  flex: 1;
+  background: #111a2e;
+  padding: 20px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  align-items: center; /* 🔥 center everything */
+  justify-content: center;
+}
+
+/* RIGHT PREVIEW */
+.preview {
+  flex: 1;
+  background: #0f172a;
+  border: 1px solid #1f2a44;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+/* RESULT PAGE */
+.result-container {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* RESULT IMAGE BOX */
+.result-box {
+  width: 400px;
+  height: 400px;
+  background: #111a2e;
+  border: 1px solid #1f2a44;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.result-box:hover {
+  transform: scale(1.03);
+}
+
+/* IMAGE FIT */
+.result-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* TEXT */
+p {
+  opacity: 0.7;
+}
+
+/*  FORCE FIX (DO NOT REMOVE) */
+select,
+input {
+  width: 280px !important;
+}
